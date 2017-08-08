@@ -114,13 +114,13 @@
 											<!-- Collect the nav links, forms, and other content for toggling -->
 											<div class="collapse navbar-collapse" id="navbar-collapse-1">
 												<!-- main-menu -->
-												<ul class="nav navbar-nav ">
-													<li><a href="#home">Home</a></li>
-                                                    <li><a href="#product">Products</a></li>
-                                                    <li><a href="#solutions">Solutions</a></li>
-                                                    <li><a href="#support">Support</a></li>
-													<li><a href="#whyus">Why Us</a></li>
-													<li><a href="#company">Company</a></li>
+												<ul id="navigation" class="nav navbar-nav ">
+													<li><a data="home">Home</a></li>
+                                                    <li><a data="product">Products Line</a></li>
+                                                    <li><a data="solutions">Solutions</a></li>
+                                                    <li><a data="support">How It Works</a></li>
+													<li><a data="whyus">Why Us</a></li>
+													<li><a data="footer">Company</a></li>
 												</ul>
 												<!-- main-menu end -->
 											</div>
@@ -198,132 +198,213 @@
 				</div>
 			</div>
 
-
-
-
-
 			<!-- section start -->
 			<!-- ================ -->
-			<div id="product" class="tag" ></div>
-			<section class="main-container">
+
+			<section id="product" class="main-container clearfix">
 				<div class="container">
-					<h3>Product Lines</h3>
+					<h3>Products Line</h3>
 					<div class="separator-2"></div>
-					<div class="row">
-						<div class="col-md-4 ">
-							<div class="feature-box-2 object-non-visible" data-animation-effect="fadeInDownSmall" data-effect-delay="150">
-								<span class="icon default-bg small"><i class="fa fa-connectdevelop"></i></span>
-								<div class="body">
-									<h4 class="title">Chip Design</h4>
-									<ul class="nav nav-pills nav-stacked list-style-icons">
-										<li><i class="fa fa-caret-right pr-10"></i>Physical Unclonable Functionality (PUF)</li>
-										<li><i class="fa fa-caret-right pr-10"></i>Compressive Sensing (CS)</li>
-									</ul>
+					<div class="row" style="margin-left:20px;">
+
+						<div class="col-md-12">
+
+
+
+							<h4 class="title">Chip Design</h4>
+
+
+
+
+							<!-- accordion start -->
+							<div class="panel-group collapse-style-1" id="accord-chip">
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accord-chip" href="#accord-chip1" class="collapsed">
+												Physical Unclonable Functionality
+											</a>
+										</h4>
+									</div>
+									<div id="accord-chip1" class="panel-collapse collapse ">
+										<div class="panel-body"> PUF is the “silicon biometrics” that exploit the intrinsic and ubiquitous variations in semiconductor integrated circuits (IC) to generate random but unique, unpredictable while reproducible, and most importantly, unclonable hardware fingerprints.</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accord-chip" href="#accord-chip2" class="collapsed">
+												Compressive Sensing
+											</a>
+										</h4>
+									</div>
+									<div id="accord-chip2" class="panel-collapse collapse">
+										<div class="panel-body">The compressive sensing technology by Soteria Networks is a perfect solution that solves both the bandwidth and security issue. It compresses and transforms the data in a unitary step. Even better, this is done at the chip level, much faster than the software method. The transformed data can transit through even public wireless network without worrying about man in the middle attack. </div>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="col-md-4 ">
-							<div class="feature-box-2 object-non-visible" data-animation-effect="fadeInDownSmall" data-effect-delay="200">
-								<span class="icon default-bg small"><i class="fa icon-snow"></i></span>
-								<div class="body">
-									<h4 class="title">IoT Operation Services</h4>
-									<ul class="nav nav-pills nav-stacked list-style-icons">
-										<li><i class="fa fa-caret-right pr-10"></i>CS Video Reconstruction</li>
-										<li><i class="fa fa-caret-right pr-10"></i>Device Lifecycle Management</li>
-										<li><i class="fa fa-caret-right pr-10"></i>Device Authentication</li>
-										<li><i class="fa fa-caret-right pr-10"></i>Data Visualization</li>
-									</ul>
+							<!-- accordion end -->
+							<!-- accordion start -->
+							<h4 class="title">IoT Operation Services</h4>
+							<div class="panel-group collapse-style-1" id="accordion-iot">
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion-iot" href="#accordion-iot1" class="collapsed">
+												<i class="fa fa-video-camera" aria-hidden="true" style="margin-right: 2px;"></i> CS Video Reconstruction
+											</a>
+										</h4>
+									</div>
+									<div id="accordion-iot1" class="panel-collapse collapse">
+										<div class="panel-body">The data reconstruction service implements an algorithm to decrypt and reconstruct high density data content, such as video, audio or picture, in a single step using a security key shared between the sever and the device. </div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion-iot" href="#accordion-iot2" class="collapsed">
+												<i class="fa fa-refresh" aria-hidden="true" style="margin-right: 4px;"></i> Device Lifecycle Management
+											</a>
+										</h4>
+									</div>
+									<div id="accordion-iot2" class="panel-collapse collapse">
+										<div class="panel-body">PLACEHOLDER</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion-iot" href="#accordion-iot3" class="collapsed">
+												<i class="fa fa-wifi" aria-hidden="true"></i> Device Authentication
+											</a>
+										</h4>
+									</div>
+									<div id="accordion-iot3" class="panel-collapse collapse">
+										<div class="panel-body">Device can authenticate itself using a state of art dynamic token service. </div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion-iot" href="#accordion-iot4" class="collapsed">
+												<i class="fa fa-eye" aria-hidden="true" style="margin-right: 2px;"></i> Data Visualization
+											</a>
+										</h4>
+									</div>
+									<div id="accordion-iot4" class="panel-collapse collapse">
+										<div class="panel-body">Devices are visualized on the IoT Operation Platform </div>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="col-md-4 ">
-							<div class="feature-box-2 object-non-visible" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
-								<span class="icon default-bg small"><i class="fa fa-diamond"></i></span>
-								<div class="body">
-									<h4 class="title">Cloud Integration Services</h4>
-									<ul class="nav nav-pills nav-stacked list-style-icons">
-										<li><i class="fa fa-caret-right pr-10"></i>API Gateway</li>
-										<li><i class="fa fa-caret-right pr-10"></i>OAuth2 AuthorizationServer</li>
-										<li><i class="fa fa-caret-right pr-10"></i>SAML Identity Provider</li>
-										<li><i class="fa fa-caret-right pr-10"></i>Policy Server</li>
-										<li><i class="fa fa-caret-right pr-10"></i>Identity Provisioning</li>
-									</ul>
+							<!-- accordion end -->
+							<!-- accordion start -->
+							<h4 class="title">Cloud Integration Services</h4>
+							<div class="panel-group collapse-style-1" id="accordion-cis">
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion-cis" href="#accordion-cis1" class="collapsed">
+												<i class="fa fa-key" aria-hidden="true"></i> API Gateway
+											</a>
+										</h4>
+									</div>
+									<div id="accordion-cis1" class="panel-collapse collapse">
+										<div class="panel-body">The API Gateway provides a great infrastructure component that simplifies service oriented architect implementation. APIs are registered with the API gateway. Requests for the services are routed through the API gateway. The API gateway also implements the authorization enforcement based on the privileges for the principal in the request. </div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion-cis" href="#accordion-cis2" class="collapsed">
+												OAuth2 Authorization Server
+											</a>
+										</h4>
+									</div>
+									<div id="accordion-cis2" class="panel-collapse collapse">
+										<div class="panel-body">OAuth2 provides authorization flows for web applications, desktop applications, mobile phones, and living room devices. It offers similar single sign on capability, but is a better choice when it comes to API level authentication for server to server communication. It handles the authorization by a resource owner when a client accesses a resource server protected by an OAuth2 authorization server. </div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion-cis" href="#accordion-cis3" class="collapsed">
+												SAML Identity Provider
+											</a>
+										</h4>
+									</div>
+									<div id="accordion-cis3" class="panel-collapse collapse">
+										<div class="panel-body">PLACEHOLDER</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion-cis" href="#accordion-cis4" class="collapsed">
+												<i class="fa fa-hdd-o" aria-hidden="true"></i>
+												Policy Server
+											</a>
+										</h4>
+									</div>
+									<div id="accordion-cis4" class="panel-collapse collapse">
+										<div class="panel-body">PLACEHOLDER</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion-cis" href="#accordion-cis5" class="collapsed">
+												<i class="fa fa-user" aria-hidden="true"></i> Identity Provisioning
+											</a>
+										</h4>
+									</div>
+									<div id="accordion-cis5" class="panel-collapse collapse">
+										<div class="panel-body">PLACEHOLDER</div>
+									</div>
 								</div>
 							</div>
+							<!-- accordion end -->
 						</div>
 					</div>
 				</div>
 			</section>
-			<!-- section end -->
 
 
-
-
-
-			<!-- section start -->
-			<!-- ================ -->
-			<div id="solutions" class="tag" ></div>
-			<section class="main-container">
+			<section id="solutions" class="main-container">
 				<div class="container">
 					<h3>Solutions</h3>
-					<div class="separator-2"></div>
-					<div class="row">
-						<div class="col-md-4 ">
-							<div class="feature-box-2 object-non-visible" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
-								<span class="icon default-bg small circle"><i class="fa icon-star-empty"></i></span>
-								<div class="body">
-									<h4 class="title">Risk Management</h4>
-									<ul class="nav nav-pills nav-stacked list-style-icons">
-										<li><i class="fa fa-caret-right pr-10"></i>Advanced Threat Detection</li>
-										<li><i class="fa fa-caret-right pr-10"></i>Behavior Analysis</li>
-										<li><i class="fa fa-caret-right pr-10"></i>Real Time Event Alert</li>
-										<li><i class="fa fa-caret-right pr-10"></i>Circuit Breaker</li>
-										<li><i class="fa fa-caret-right pr-10"></i>Policy Server</li>
-										<li><i class="fa fa-caret-right pr-10"></i>Reduce Cost and Mitigate Impact</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 ">
-							<div class="feature-box-2 object-non-visible" data-animation-effect="fadeInDownSmall" data-effect-delay="150">
-								<span class="icon default-bg small circle"><i class="fa fa-arrows"></i></span>
-								<div class="body">
-									<h4 class="title">Ease of Deployment</h4>
-									<ul class="nav nav-pills nav-stacked list-style-icons">
-										<li><i class="fa fa-caret-right pr-10"></i>Enterprise Usage Ready</li>
-										<li><i class="fa fa-caret-right pr-10"></i>Proven Solutions</li>
-										<li><i class="fa fa-caret-right pr-10"></i>Used by Our Fortune 100 Customers</li>
-										<li><i class="fa fa-caret-right pr-10"></i>OS agnostic</li>
-										<li><i class="fa fa-caret-right pr-10"></i>Hardware Agnostic</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 ">
-							<div class="feature-box-2 object-non-visible" data-animation-effect="fadeInDownSmall" data-effect-delay="200">
-								<span class="icon default-bg small circle"><i class="fa icon-infinity"></i></span>
-								<div class="body">
-									<h4 class="title">End to End Protection</h4>
-									<ul class="nav nav-pills nav-stacked list-style-icons">
-										<li><i class="fa fa-caret-right pr-10"></i>Extend Protection From Core to Edge</li>
-										<li><i class="fa fa-caret-right pr-10"></i>Cover IoT Devices and End Points</li>
-										<li><i class="fa fa-caret-right pr-10"></i>Cohesive Solution for Cloud and IoT</li>
-									</ul>
-								</div>
-							</div>
-						</div>
+
+					<div class="bs-callout bs-callout-warning" >
+						<h4>Data Pool</h4>
+						<p>
+							Enterprise companies typically have many data storage systems. It’s very critical for business to leverage the rich data content to harvest more revenue. This is where data pool or data lake concept comes into picture. A business will build micro services to expose data access APIs. As the number of APIs grows, how to manage and control the access to the APIs becomes a prominent issue. The cloud integration platform has a build-in API gateway through which a business can register/expose service APIs. The gateway is an authorization/policy enforcement point where API access is checked against the privileges associated with the principal in the request.
+						</p>
 					</div>
 
+					<div class="bs-callout bs-callout-warning">
+						<h4>Business Merge & Acquisition</h4>
+						<p>
+							Business merge and acquisition often result in information islands. Quickly connecting the systems together not only reduces business overhead, but also creates new revenue opportunities. With Soteria Networks’ cloud integration platform, existing systems can participate in SSO federation using SAML or OAuth2, the best standards currently used by the industry. Users can access additional applications based on privilege settings.
+						</p>
+					</div>
+
+					<div class="bs-callout bs-callout-warning" >
+						<h4>Cloud Computing</h4>
+						<p>
+							A new cloud data center should not settle with providing hardware resources to its customers, Value added services, such as API gateway and Identity & Access Management, are highly desirable for additional revenue. The cloud integration platform by Soteria Networks is a perfect match to quickly enable those features.
+						</p>
+					</div>
 				</div>
 			</section>
+
+
 			<!-- section end -->
 
 
 
 			<!-- section start -->
 			<!-- ================ -->
-			<div id="support" class="tag" ></div>
-			<section class="main-container">
+
+			<section id="support" class="main-container">
 				<div class="container">
 					<h3>How It Works</h3>
 					<div class="separator-2"></div>
@@ -421,47 +502,13 @@
 			<!-- section end -->
 
 
-			<!-- section start -->
-			<!-- ================ -->
-			<!--
-			<section class="section dark-bg pv-40 clearfix">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="call-to-action text-center">
-								<div class="row">
-									<div class="col-sm-8 col-sm-offset-2">
-										<h3 class="title"><strong>Subscribe</strong> To Our Newsletter</h3>
-										<p>We will keep you in the loop with all up-to-date news about Soteria Networks. Thank you for your interest in advance. Please use the form below to subscribe...</p>
-										<div class="separator"></div>
-										<form class="form-inline margin-clear" action="//formspree.io/info@soterianetworks.com" method="POST">
-											<div class="form-group has-feedback">
-												<label class="sr-only" for="subscribe3">Email address</label>
-												<input type="email" class="form-control" id="subscribe3" placeholder="Please enter your email" name="_replyto" required="">
-												<i class="fa fa-envelope form-control-feedback"></i>
-												<input type="hidden" name="name" value="Newsletter Subscriber">
-												<input type="hidden" name="subject" value="Subscribe me">
-												<input type="hidden" name="message" value="Subscribe me to your newsletter! Thank you.">
-											</div>
-											<button type="submit" class="btn btn-gray-transparent btn-animated margin-clear">Submit <i class="fa fa-send"></i></button>
-										</form>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			-->
-			<!-- section end -->
-
 
 
 
 			<!-- section start -->
 			<!-- ================ -->
-			<div id="whyus" class="tag" ></div>
-			<section class="main-container clearfix">
+
+			<section id="whyus" class="main-container clearfix">
 				<div class="container">
 					<h3>Why <strong>Choose</strong> Us?</h3>
 					<div class="separator-2"></div>
@@ -565,7 +612,7 @@
 			<!-- footer top end -->
 			<!-- footer start (Add "dark" class to #footer in order to enable dark footer) -->
 			<!-- ================ -->
-			<div id="company" class="tag" ></div>
+
 			<footer id="footer" class="clearfix ">
 
 				<!-- .footer start -->
@@ -666,3 +713,18 @@
 
 	</body>
 </html>
+
+<script>
+
+	$(function(){
+
+		$(".navbar-nav li a").click(function() {
+			var name = $(this).attr('data');
+			var pos = $("#" + name).offset().top - 50  ;
+
+			$('html, body').animate({ scrollTop: pos }, 550);
+		});
+	});
+
+
+</script>

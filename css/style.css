@@ -7778,15 +7778,13 @@ h6.media-heading {
   color: #fff;
 }
 
-.tag {
-    height:25px;
-}
 
 .carousel-indicators li {
     opacity: .6;
     width: 20px!important;
     background: gray;
     height: 20px!important;
+    margin: 0;
 }
 
 .carousel-indicators li.active {
@@ -7795,6 +7793,18 @@ h6.media-heading {
 
 }
 
+a{
+    cursor:pointer;
+}
+
+.bs-callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-left-color: #1e2980;
+    border-radius: 3px;
+}
 
 
 /*# sourceMappingURL=style.css.map */
