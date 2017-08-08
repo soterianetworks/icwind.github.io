@@ -46,8 +46,9 @@
 	<!-- "transparent-header": makes the header transparent and pulls the banner to top -->
 	<!-- "gradient-background-header": applies gradient background to header -->
 	<!-- "page-loader-1 ... page-loader-6": add a page loader to the page (more info @components-page-loaders.html) -->
+
 	<body class="no-trans front-page gradient-background-header">
-	<div id="home"></div>
+		<div id="home"></div>
 		<!-- scrollToTop -->
 		<!-- ================ -->
 		<div class="scrollToTop circle"><i class="icon-up-open-big"></i></div>
@@ -65,7 +66,8 @@
 				<!-- "dark": dark version of header e.g. class="header dark clearfix" -->
 				<!-- "full-width": mandatory class for the full-width menu layout -->
 				<!-- "centered": mandatory class for the centered logo layout -->
-				<!-- ================ --> 
+				<!-- ================ -->
+
 				<header class="header fixed clearfix">
 					
 					<div class="container">
@@ -117,11 +119,10 @@
                                                     <li><a href="#product">Products</a></li>
                                                     <li><a href="#solutions">Solutions</a></li>
                                                     <li><a href="#support">Support</a></li>
-													<li><a href="#about">About Us</a></li>
+													<li><a href="#whyus">Why Us</a></li>
+													<li><a href="#company">Company</a></li>
 												</ul>
 												<!-- main-menu end -->
-												
-
 											</div>
 										</div>
 									</nav>
@@ -137,24 +138,7 @@
 				<!-- header end -->
 			</div>
 			<!-- header-container end -->
-		
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-			<!-- banner end -->
 
 			<div id="page-start"></div>
 
@@ -218,53 +202,22 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 			<!-- section start -->
 			<!-- ================ -->
 			<div id="product" class="tag" ></div>
 			<section class="main-container">
 				<div class="container">
-					<h2 class="title text-center" ><strong>Products</strong></h2>
-					<div class="separator"></div>
-					<br>
+					<h3>Product Lines</h3>
+					<div class="separator-2"></div>
 					<div class="row">
-						<div class="col-md-4 ">
-							<div class="feature-box-2 object-non-visible" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
-								<span class="icon default-bg small"><i class="fa fa-diamond"></i></span>
-								<div class="body">
-									<h4 class="title">Application Security</h4>
-									<ul class="nav nav-pills nav-stacked list-style-icons">
-										<li><i class="fa fa-caret-right pr-10"></i>API Gateway</li>
-										<li><i class="fa fa-caret-right pr-10"></i>Identity Provisioning</li>
-										<li><i class="fa fa-caret-right pr-10"></i>Single Sign On</li>
-										<li><i class="fa fa-caret-right pr-10"></i>OAuth2 Server</li>
-										<li><i class="fa fa-caret-right pr-10"></i>Policy Server</li>
-										<li><i class="fa fa-caret-right pr-10"></i>Behavior Analysis</li>
-									</ul>
-								</div>
-							</div>
-						</div>
 						<div class="col-md-4 ">
 							<div class="feature-box-2 object-non-visible" data-animation-effect="fadeInDownSmall" data-effect-delay="150">
 								<span class="icon default-bg small"><i class="fa fa-connectdevelop"></i></span>
 								<div class="body">
-									<h4 class="title">Data Security</h4>
+									<h4 class="title">Chip Design</h4>
 									<ul class="nav nav-pills nav-stacked list-style-icons">
-										<li><i class="fa fa-caret-right pr-10"></i>Certificate Management</li>
-										<li><i class="fa fa-caret-right pr-10"></i>Field Level Masking</li>
-										<li><i class="fa fa-caret-right pr-10"></i>User Level Encryption</li>
-										<li><i class="fa fa-caret-right pr-10"></i>Service Account Level Encryption</li>
+										<li><i class="fa fa-caret-right pr-10"></i>Physical Unclonable Functionality (PUF)</li>
+										<li><i class="fa fa-caret-right pr-10"></i>Compressive Sensing (CS)</li>
 									</ul>
 								</div>
 							</div>
@@ -273,13 +226,27 @@
 							<div class="feature-box-2 object-non-visible" data-animation-effect="fadeInDownSmall" data-effect-delay="200">
 								<span class="icon default-bg small"><i class="fa icon-snow"></i></span>
 								<div class="body">
-									<h4 class="title">IoT Security</h4>
+									<h4 class="title">IoT Operation Services</h4>
 									<ul class="nav nav-pills nav-stacked list-style-icons">
-										<li><i class="fa fa-caret-right pr-10"></i>Device Gateway</li>
-										<li><i class="fa fa-caret-right pr-10"></i>Device Provisioning</li>
-										<li><i class="fa fa-caret-right pr-10"></i>Visualization</li>
-										<li><i class="fa fa-caret-right pr-10"></i>Behavior Analysis</li>
-										<li><i class="fa fa-caret-right pr-10"></i>Device Monitoring</li>
+										<li><i class="fa fa-caret-right pr-10"></i>CS Video Reconstruction</li>
+										<li><i class="fa fa-caret-right pr-10"></i>Device Lifecycle Management</li>
+										<li><i class="fa fa-caret-right pr-10"></i>Device Authentication</li>
+										<li><i class="fa fa-caret-right pr-10"></i>Data Visualization</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 ">
+							<div class="feature-box-2 object-non-visible" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
+								<span class="icon default-bg small"><i class="fa fa-diamond"></i></span>
+								<div class="body">
+									<h4 class="title">Cloud Integration Services</h4>
+									<ul class="nav nav-pills nav-stacked list-style-icons">
+										<li><i class="fa fa-caret-right pr-10"></i>API Gateway</li>
+										<li><i class="fa fa-caret-right pr-10"></i>OAuth2 AuthorizationServer</li>
+										<li><i class="fa fa-caret-right pr-10"></i>SAML Identity Provider</li>
+										<li><i class="fa fa-caret-right pr-10"></i>Policy Server</li>
+										<li><i class="fa fa-caret-right pr-10"></i>Identity Provisioning</li>
 									</ul>
 								</div>
 							</div>
@@ -297,14 +264,10 @@
 			<!-- ================ -->
 			<div id="solutions" class="tag" ></div>
 			<section class="main-container">
-
 				<div class="container">
-					<h2 class="title text-center"><strong>Solutions</strong></h2>
-					<div class="separator"></div>
-					<br>
+					<h3>Solutions</h3>
+					<div class="separator-2"></div>
 					<div class="row">
-						<h3 class="text-center">Know-How to <strong>Security</strong> Problems</h3>
-						<div class="separator"></div>
 						<div class="col-md-4 ">
 							<div class="feature-box-2 object-non-visible" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
 								<span class="icon default-bg small circle"><i class="fa icon-star-empty"></i></span>
@@ -357,14 +320,13 @@
 
 
 
-
 			<!-- section start -->
 			<!-- ================ -->
 			<div id="support" class="tag" ></div>
 			<section class="main-container">
 				<div class="container">
-					<h2 class="title text-center"><strong>Support</strong></h2>
-					<div class="separator"></div>
+					<h3>How It Works</h3>
+					<div class="separator-2"></div>
 					<br>
 					<div class="row">
 						<div class="col-md-6">
@@ -459,29 +421,6 @@
 			<!-- section end -->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 			<!-- section start -->
 			<!-- ================ -->
 			<!--
@@ -519,20 +458,10 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 			<!-- section start -->
 			<!-- ================ -->
-			<section class="section clearfix">
+			<div id="whyus" class="tag" ></div>
+			<section class="main-container clearfix">
 				<div class="container">
 					<h3>Why <strong>Choose</strong> Us?</h3>
 					<div class="separator-2"></div>
@@ -633,19 +562,10 @@
 			<!-- section end -->
 
 
-
-
-
-
-
-
-
-
 			<!-- footer top end -->
 			<!-- footer start (Add "dark" class to #footer in order to enable dark footer) -->
 			<!-- ================ -->
-			<div id="about" class="tag" ></div>
-
+			<div id="company" class="tag" ></div>
 			<footer id="footer" class="clearfix ">
 
 				<!-- .footer start -->
@@ -696,7 +616,7 @@
 						<div class="subfooter-inner">
 							<div class="row">
 								<div class="col-md-12">
-									<p class="text-center">Copyright © 2016 Soteria Networks. All Rights Reserved</p>
+									<p class="text-center">Copyright © 2017 ICWIND. All Rights Reserved</p>
 								</div>
 							</div>
 						</div>
