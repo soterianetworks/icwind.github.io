@@ -392,12 +392,12 @@
 									<strong class="fa-stack-1x fa-stack-text fa-inverse">1</strong>
 								</span>
 								<div class="arrow-body"></div><div class="arrow-head"></div>
-								<h3>Encrypt</h3>
-								<p><i class="fa fa-lock fa-3x icn"></i>Camera footage  is encrypted using a Physically Unclonable Function(PUF).</p>
+								<h4>Device Authentication</h4>
+								<p><i class="fa fa-lock fa-3x icn"></i>
+									PUF based key is the root of truth. A fake device can not impersonate a legitimate one since the PUF key can not be directly accessed.
+								</p>
 							</a>
 						</div>
-
-
 
 						<div class="col-sm-3">
 							<a data-target="#howCarousel" data-slide-to="1" class="active">
@@ -406,11 +406,13 @@
 									<strong class="fa-stack-1x fa-stack-text fa-inverse">2</strong>
 								</span>
 								<div class="arrow-body"></div><div class="arrow-head"></div>
-								<h3>Send</h3>
-								<p><i class="fa fa-wifi fa-3x icn"></i>Data is sent securely to a Soteria server over the internet.</p>
+								<h4>Video Monitoring</h4>
+								<p>
+									<i class="fa fa-wifi fa-3x icn"></i>
+									The video frames are compressed using a security key. Only the sever with the same key can reconstruct the video content.
+								</p>
 							</a>
 						</div>
-
 
 						<div class="col-sm-3">
 							<a data-target="#howCarousel" data-slide-to="2" class="active">
@@ -420,8 +422,11 @@
 									<strong class="fa-stack-1x fa-stack-text fa-inverse">3</strong>
 								</span>
 								<div class="arrow-body"></div><div class="arrow-head"></div>
-								<h3>Decrypt</h3>
-								<p><i class="fa fa-unlock fa-3x icn"></i>Footage is reconstructed using the private key.</p>
+								<h4>Anomaly Detection</h4>
+								<p>
+									<i class="fa fa-search fa-3x icn"></i>
+									Compressive Sensing needs much less audio signals to analyze and identify problems originated from systems.
+								</p>
 							</a>
 						</div>
 
@@ -432,8 +437,12 @@
 									<i class="fa fa-circle fa-stack-2x"></i>
 									<strong class="fa-stack-1x fa-stack-text fa-inverse">4</strong>
 								</span>
-								<h3>Results</h3>
-								<p><i class="fa fa-television fa-3x icn"></i>User can view video from Soteria Cloud Integration Platform.</p>
+								<div class="arrow-body"></div><div class="arrow-head"></div>
+								<h4>Data Visualization</h4>
+								<p>
+									<i class="fa fa-television fa-3x icn"></i>
+									Our IoT operation portal implements advanced reconstruction algorithms for audio and video.
+								</p>
 							</a>
 						</div>
 					</div>
@@ -447,17 +456,29 @@
 								<div class="carousel-inner">
 
 									<div class="item active">
-										<div>During the transformation, the original data size is reduced and the bits are manipulated that can only be reconstructed with the same key. A man in the middle attack is impossible when the key is not available to the attackers.</div>
+										<div>
+											This is very similar to how SSL authentication works. A server holds the device PUF public key obtained through an interface on the chip. When the device authenticates itself with the server, it sends an authentication request to the server. The server will encrypt a hash value using the PUF public key and send it back. The device will then decrypt the value and send that back to the server. The server then compares the hash value from the device with the original hash value from the server. If they are identical, the device is authenticated.
+										</div>
 									</div>
 									<div class="item">
-										<div>After the signal is transformed by the compressive module, it’s streamed to a cloud based video reconstruction service. The reconstructed video can be analyzed for anomaly detection purpose. 				</div>
+										<div>
+											Compared with H.264, CS has similar compression ratio. To achieve the same video quality, advanced video reconstruction algorithm is need on the server side.
+											CS is better choice when realtime HD video is not required. In those scenarios, it provides added content security
+											and requires lower power consumption. This makes is a perfect fit for carry-on monitoring devices.
+										</div>
 									</div>
 
 									<div class="item">
-										<div>The data reconstruction service implements an algorithm to decrypt and reconstruct high density data content, such as video, audio or picture, in a single step using a security key shared between the sever and the device. </div>
+										<div>
+											One of the advantages of CS is that CS doesn't follow Nyquist principle - The sample rate must be more than twice the signal bandwidth in order to accurately reconstruct the signal. So, it increases the sampling efficiency significantly and simplifis data analysis in anomaly detection.
+										</div>
 									</div>
 									<div class="item">
-										<div>The Workbench is a single-page web application. The content is personalized based on user’s privilege settings. Administrators will see more content, such as the information asset management modules. For regular user, it acts as a launch point to access authorized applications and conduct self services. </div>
+										<div>
+											Data processed by CS requires a reconstruction on the server side. The trade off for CS is less processing on the
+											device and more processing on the server. Since IoT devices normaly has limited power supply and computing capacity,
+											CS works well with IoT devices.
+										</div>
 									</div>
 								</div>
 
@@ -475,9 +496,14 @@
 					<h3>Case Study</h3>
 
 					<div class="bs-callout bs-callout-warning" >
-						<h4>Fight Counterfeit Devices</h4>
+						<h4>Electric Grid Field Operation Monitoring</h4>
 						<p>
-							Leveraging the PUF based device authentication mechanism, a counterfeit device will not be able to authenticate with a central validation server and impersonate itself as a legitimate device. This is very useful in medical device business where counterfeit devices cause not only health risks to the patients, but also financial and reputation damages to the authentic device manufacturers.
+							Personal casualty is a great concern in high-voltage electric grid field construction. For compliance purpose, the customer
+							needs to record the field activities. Realtime monitoring is preferred when wireless signal, such as 3G/4G, is available,
+							otherwise, the video should be kept in the recording unit for late processing. An existing proposal based on VPN and H.264
+							was not accepted due to limited bandwidth and battery time lasts only 4 hours.
+							<br><br>
+							The customer was persuaded by our CS based proposal since it eliminates the VPN usage and the battery can last up to 8 hours.
 						</p>
 					</div>
 
@@ -489,13 +515,17 @@
 							Dedicated wired signal transportation provides sufficient bandwidth and data protection, but the construction cost and logistics are huge obstacles, which makes wireless a much preferred solution. However wireless has limited bandwidth and prone to security attack.
 							<br><br>
 							The compressive sensing technology by Soteria Networks is a perfect solution that solves both the bandwidth and security issue. It compresses and transforms the data in a unitary step. Even better, this is done at the chip level, much faster than the software method. The transformed data can transit through even public wireless network without worrying about man in the middle attack.
+							<br><br>
+							Soteria Networks is working with a railway technology company developing a track defect detection system.
 						</p>
 					</div>
 
 					<div class="bs-callout bs-callout-warning" >
-						<h4>Data Lake</h4>
+						<h4>Federated Remote IoT Access</h4>
 						<p>
-							Enterprise companies typically have many data storage systems. It’s very critical for business to leverage the rich data content to harvest more revenue. This is where data lake concept comes into picture. A business will build micro services to expose data access APIs. As the number of APIs grows, how to manage and control the access to the APIs becomes a prominent issue. The cloud integration platform has a build-in API gateway through which a business can register/expose service APIs. The gateway is an authorization/policy enforcement point where API access is checked against the privileges associated with the principal in the request.
+							A Fortune 500 company provides monitoring and diagnosis service to hundreds of thousands of storage servers hosted on the customer sites. Customer security concern requires support personnel visit that results in high cost and slow service. A federated remote access solution is desired to allow customers to participate in the decision process.
+							<br><br>
+							With the first rollout of a solution designed by us, it eliminates annual loss of 22,000 man hours, translating to $2M in savings. Long term benefit also includes saved additional license cost each year.
 						</p>
 					</div>
 				</div>
@@ -667,7 +697,7 @@
 									<div class="footer-content">
 
 										<div class="logo-footer"><img id="logo-footer" src="images/1_vertical.185x133.png" alt=""></div>
-										<p>Soteria Networks is software firm specializing in security for enterprise applications, data and IoT devices. We are building the next generation security services to create unique customer experience and maximize their return on investment</p>
+										<p>Soteria Networks is technology firm specializing in PUF based security chip design, audio/video compressive sensing and cloud based software integration. We are building the next generation solutions to create unique customer experience and maximize their return on investment</p>
 										<div class="separator-2"></div>
 
 									</div>
@@ -676,7 +706,7 @@
 									<div class="footer-content">
 										<h2 class="title">Find Us</h2>
 										<div class="separator-2"></div>
-										<p>Soteria Networks is a software firm specializing in security for enterprise applications, data and IoT devices.</p>
+										<p>Soteria Networks enhances data security and improves data transporation efficiency.</p>
 										<ul class="social-links circle animated-effect-1">
 											<li class="linkedin"><a target="_blank" href="https://www.linkedin.com/company/soteria-networks"><i class="fa fa-linkedin"></i></a></li>
 											<li class="twitter"><a target="_blank" href="http://www.twitter.com/soterianetworks"><i class="fa fa-twitter"></i></a></li>
