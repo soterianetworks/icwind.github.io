@@ -506,9 +506,7 @@ tbody {
   min-height: 400px;
   padding-top: 100px;
 }
-.main-container {
-  padding: 50px 0 0 0 ;
-}
+
 .block {
   margin-bottom: 50px;
 }
@@ -7893,45 +7891,34 @@ a{
     height: 50px
 }
 
-
-
 #myCarousel  {
-
     background: linear-gradient(to bottom, rgba(104,204,255, 0.52) 0%,#ffffff 100%);
-
 }
 
 #myCarousel .carousel-inner {
     margin: 20px 10px 0 0;
 }
 
-
-
-
-
-
-
 #product .panel-heading a{
     color:black;
 }
-
-
-
-
 
 #product .panel-heading {
     background: linear-gradient(to right, rgba(104,204,255, 0.52) 0%,#ffffff 100%);
 
 }
 
-
-
 #product i{
     display:none;
 }
 
+#casestudy .collapse, #casestudy .collapsing{
+    margin-bottom: 0!important;
+}
 
-
+#casestudy h4{
+    cursor:pointer;
+}
 
 @media (max-width: 992px) {
 

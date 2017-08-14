@@ -234,12 +234,12 @@
 								<div class="panel panel-default" >
 									<div class="panel-heading">
 										<h4 class="panel-title">
-											<a data-toggle="collapse" data-parent="#accord-chip" href="#accord-chip1" expanded="true">
+											<a data-toggle="collapse" data-parent="#accord-chip" href="#accord-chip1" class="collapsed">
 												PUF芯片
 											</a>
 										</h4>
 									</div>
-									<div id="accord-chip1" class="panel-collapse in">
+									<div id="accord-chip1" class="panel-collapse collapse">
 										<div class="panel-body">
 											PUF，即物理上不可克隆的功能，是利用半导体集成电路（IC）中的固有和普遍存在的变化产生随机但独特的，不可预测的，但可重现的，最重要的是不可克隆的硬件指纹“硅生物测定”。即使在相同的制造过程中，由于超大规模集成（集成到一个硅芯片中的数亿个晶体管）和纳米尺度器件特性中的不可控非均匀性引起的物理变化，每个IC实际上都是不同的。 PUF利用这种物理可变性来实现低成本，小尺寸，高能效的认证和适用于物联网平台的加密密钥生成。
 											<br><br>
@@ -464,8 +464,8 @@
 					<h3>案例</h3>
 
 					<div class="bs-callout bs-callout-warning" >
-						<h4>电网施工现场监控</h4>
-						<p>
+						<h4 data-toggle="collapse" href="#casestudy1" aria-expanded="false" aria-controls="casestudy1">电网施工现场监控</h4>
+						<p class="collapse" id="casestudy1">
 							个人伤亡事故是高压电网现场建设的重中之重。为了合规目的，客户需要记录现场活动。当无线信号（如3G / 4G）可用时，实时监控是首选的，
 							视频应保存在录音单元中进行后期处理。基于VPN和H.264的现有提案由于带宽有限，电池充电时间只有4小时，因此不被接受。
 							<br><br>
@@ -474,8 +474,8 @@
 					</div>
 
 					<div class="bs-callout bs-callout-warning">
-						<h4>铁路异物入侵检测</h4>
-						<p>
+						<h4 data-toggle="collapse" href="#casestudy2" aria-expanded="false" aria-controls="casestudy2">铁路异物入侵检测</h4>
+						<p class="collapse" id="casestudy2">
 							外来物资进入铁路轨道，造成巨大的人身财产损失，特别是在高速铁路和地铁系统。迫切需要利用从现场收集到的实时音频和视频信号来预测即将发生的事故。
 							<br><br>
 							专用有线信号传输提供足够的带宽和数据保护，但施工成本和物流是巨大的障碍，这使得无线是一个很好的解决方案。然而无线的带宽有限，容易发生安全攻击。
@@ -487,8 +487,8 @@
 					</div>
 
 					<div class="bs-callout bs-callout-warning" >
-						<h4>联合远程IoT访问</h4>
-						<p>
+						<h4 data-toggle="collapse" href="#casestudy3" aria-expanded="false" aria-controls="casestudy3">联合远程IoT访问</h4>
+						<p class="collapse" id="casestudy3">
 							一家财富500强公司为客户站点上托管的数十万个存储服务器提供监控和诊断服务。客户安全关注要求支持人员访问导致高成本和慢速服务。联合远程访问解决方案需要允许客户参与决策过程。
 							<br><br>
 							我们设计的第一期解决方案每年可以为客户节省22,000小时的工作时间，相当于二百万美元的费用，此外每年为客户节省额外的许可证费用。						</p>
@@ -496,53 +496,11 @@
 				</div>
 			</section>
 
-		<!--
-			<section id="test" class="main-container">
-				<div class="container">
-					<h3>See More</h3>
-					<div class="row" >
-
-						<div class="col-sm-6 col-md-4 ">
-							<div class="see-more">
-								<img src="images/sn_iot_720.jpg" class="light">
-								<img src="images/sn_iot_720-30b.jpg" class="dark">
-								<p>PUF Demo</p>
-								<small>See How PUF works</small>
-							</div>
-						</div>
-
-
-						<div class="col-sm-6 col-md-4 ">
-							<div class="see-more">
-								<img src="images/sn_car_720.jpg" class="light">
-								<img src="images/sn_car_720-30b.jpg" class="dark">
-								<p>PUF Demo</p>
-								<small>See How PUF works</small>
-							</div>
-						</div>
-
-
-						<div class="col-sm-6 col-md-4">
-							<div class="see-more">
-								<img src="images/sn_iot_720.jpg" class="light">
-								<img src="images/sn_iot_720-30b.jpg" class="dark">
-								<p>PUF Demo</p>
-								<small>See How PUF works</small>
-							</div>
-						</div>
-
-
-
-					</div>
-				</div>
-			</section>
-
--->
 
 
 			<!-- section start -->
 			<!-- ================ -->
-			<section id="whyus" class="main-container clearfix">
+			<section class="main-container clearfix">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
@@ -568,7 +526,7 @@
 			<!-- section start -->
 			<!-- ================ -->
 
-			<section class="main-container clearfix">
+			<section  id="whyus" class="main-container clearfix">
 				<div class="container">
 					<h3>为什么<strong>选择</strong>我们?</h3>
 					<div class="separator-2"></div>
@@ -759,7 +717,7 @@
 	function initSectionFinder(){
 		$(".navbar-nav li a").click(function() {
 			var name = $(this).attr('data');
-			var pos = $("#" + name).offset().top - 50  ;
+			var pos = $("#" + name).offset().top - 100  ;
 
 			$('html, body').animate({ scrollTop: pos }, 550);
 		});
