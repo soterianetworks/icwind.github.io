@@ -464,7 +464,7 @@
 					<h3>案例</h3>
 
 					<div class="bs-callout bs-callout-warning" >
-						<h4 data-toggle="collapse" href="#casestudy1" aria-expanded="false" aria-controls="casestudy1">电网施工现场监控</h4>
+						<h4 data-toggle="collapse" href="#casestudy1" aria-expanded="false" class="collapsed" aria-controls="casestudy1">电网施工现场监控<i class="glyphicon glyphicon-chevron-right pull-right"></i><i class="glyphicon glyphicon-chevron-down pull-right"></i></h4>
 						<p class="collapse" id="casestudy1">
 							个人伤亡事故是高压电网现场建设的一个痛点。为了合规目的，客户需要记录现场活动。当无线信号（如3G / 4G）可用时，可以采用实时监控。在没有信号的地区，
 							视频应先本地保存，然后再进行后期处理。现有方案基于VPN和H.264。 由于带宽有限，电池使用时间只有4小时，因此不被接受。
@@ -474,7 +474,7 @@
 					</div>
 
 					<div class="bs-callout bs-callout-warning">
-						<h4 data-toggle="collapse" href="#casestudy2" aria-expanded="false" aria-controls="casestudy2">铁路异物入侵检测</h4>
+						<h4 data-toggle="collapse" href="#casestudy2" aria-expanded="false" class="collapsed" aria-controls="casestudy2">铁路异物入侵检测<i class="glyphicon glyphicon-chevron-right pull-right"></i><i class="glyphicon glyphicon-chevron-down pull-right"></i></h4>
 						<p class="collapse" id="casestudy2">
 							外来异物进入铁路轨道会造成巨大的人身与财产损失。高速铁路和地铁系统迫切需要利用从现场收集到的实时音频和视频信号来预测即将发生的事故。
 							<br><br>
@@ -487,7 +487,7 @@
 					</div>
 
 					<div class="bs-callout bs-callout-warning" >
-						<h4 data-toggle="collapse" href="#casestudy3" aria-expanded="false" aria-controls="casestudy3">联合远程IoT访问</h4>
+						<h4 data-toggle="collapse" href="#casestudy3" aria-expanded="false" class="collapsed" aria-controls="casestudy3">联合远程IoT访问<i class="glyphicon glyphicon-chevron-right pull-right"></i><i class="glyphicon glyphicon-chevron-down pull-right"></i></h4>
 						<p class="collapse" id="casestudy3">
 							一家财富500强公司为客户托管的数十万个存储服务器提供监控和诊断服务。这家公司的客服人员需要上门服务，成本很高，而且服务速度慢。我们为这家公司设计了一个远程访问方案，
 							能让客户参与是否让客服人员登录的决定。
@@ -719,7 +719,13 @@
 	function initSectionFinder(){
 		$(".navbar-nav li a").click(function() {
 			var name = $(this).attr('data');
-			var pos = $("#" + name).offset().top - 100  ;
+			var pos = $("#" + name).offset().top - 10;
+
+
+			//for small screens, position section at the top(because there is no menu
+			if ($(window).width()>767){
+				pos -= 100;
+			}
 
 			$('html, body').animate({ scrollTop: pos }, 550);
 		});

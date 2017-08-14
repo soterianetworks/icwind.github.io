@@ -425,7 +425,7 @@ tbody {
 }
 .header {
   border-top: 1px solid #ffffff;
-  border-bottom: 2px solid #f1f1f1;
+  border-top: 1px solid #ffffff;
   background-color: #fcfcfc;
 }
 .header.dark {
@@ -7866,6 +7866,11 @@ a{
 #howCarousel .item{
     color:#6f6f6f;
 }
+
+#howCarousel .carousel-inner{
+    height: inherit;
+}
+
 #support .main{
     margin-right: 0;
     margin-left:  0;
@@ -7917,7 +7922,30 @@ a{
 }
 
 #casestudy h4{
-    cursor:pointer;
+    margin:0;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+#casestudy h4 .glyphicon-chevron-down, #casestudy h4.collapsed .glyphicon-chevron-right{
+    display:block;
+}
+
+#casestudy h4.collapsed .glyphicon-chevron-down, #casestudy h4 .glyphicon-chevron-right{
+    display:none;
+}
+
+
+
+@media (min-width: 993px) {
+
+    #howCarousel{
+        height: 100px
+    }
+
+    #support .col-sm-3 {
+       height: 215px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -7926,9 +7954,13 @@ a{
         height: 100px
     }
 
-     #support .icn{
+    #support .col-sm-3 {
+        height: 235px;
+    }
+
+    #support .icn{
         display: none;
-     }
+    }
 }
 
 
@@ -7941,8 +7973,7 @@ a{
         height: 150px
     }
 
-
-    #support h3 {
+    #support h4 {
         display:inline-block;
         margin:0;
     }
