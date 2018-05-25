@@ -1617,7 +1617,7 @@ margin-bottom: 10px;}
 @media only screen and (max-width:1240px) {
 	.product-img {
 		width: 80%;
-		margin-top: 25px;
+		margin-top: 15px;
 	}
 }
 
@@ -1673,7 +1673,7 @@ margin-bottom: 10px;}
 	/* 产品展示*/
 	.product-img {
 		width: 90%;
-		margin-top: 25px;
+		margin-top: 15px;
 	}
 	.product-content {
 		margin: 0 10%;
@@ -2048,7 +2048,10 @@ i.am-icon-tasks{ display: none;}
 	.daiyu-title-ul {
 		margin-top: 20px !important;
 	}
-	.product-img{ margin-top: -20px;}
+	.product-img{
+	    margin-top: -20px;
+	}
+
 	/*服务中心*/
 	.service-img img {
 		width: 75%;
@@ -2067,8 +2070,8 @@ i.am-icon-tasks{ display: none;}
 		font-size: 14px;
 	}
 	.service-ul li:first-child {
-  margin-top: 20px;
-}
+      margin-top: 20px;
+    }
 	/*新闻动态*/
 	.news-content-all {
 		margin-top: 0;
