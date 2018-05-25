@@ -260,18 +260,16 @@ a {
 .footer {
 	width: 100%;
 	height: auto;
-	background-color: #444444;
+	background-color: #2d2d2d;
 	overflow: hidden;
-	padding: 0 0% 25px 0%;
+	padding: 0 5% 25px 5%;
+	background: url(../img/bg-pic2.png) no-repeat;
 	background-size: 100% 100%;
 }
 
 .footer ul {
-    margin-top: 25px;
-    margin-bottom: 25px;
-    font-size: 15px;
-
-	padding-top: 25px;
+	padding-top: 40px;
+	width: 85%;
 	margin: 0 auto;
 }
 
@@ -1001,6 +999,10 @@ i.am-icon-file-text.file-text {
 	background-color: #f0eeed;
 }
 
+.white-li {
+	background-color: #ffffff;
+}
+
 .product-show-ul li {
 	padding: 35px 0;
 }
@@ -1579,6 +1581,12 @@ margin-bottom: 10px;}
 	margin-top: -10px !important;
 }
 
+.job-gallery-words {
+	height: 150px;
+	width: 100%;
+	line-height: 26px;
+	overflow: hidden;
+}
 
 /*服务中心*/
 
