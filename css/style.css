@@ -1047,6 +1047,7 @@ i.am-icon-tasks {
 
 .product-intro p {
     font-size: 14px;
+    color: rgb(153, 153, 153);
 }
 
 .product-content-left {
@@ -1395,10 +1396,10 @@ i.am-icon-tasks {
 
 .company-intro p {
     margin-top: 25px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     margin-left: 15%;
     margin-right: 15%;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .thought-all {
@@ -1430,13 +1431,13 @@ i.am-icon-tasks {
 
 .company-thought {
     display: table;
-    margin: 0 auto;
+    margin: 50px 15% 30px 15%;
 }
 
 .company-thought li {
     float: left;
-    text-align: center;
-    margin: 0 10px;
+    text-align: middle;
+    margin: 0 20px;
 }
 
 .thought-all-none:hover {
