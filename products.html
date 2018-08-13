@@ -22,12 +22,15 @@
 <header class="am-topbar header">
 	<div class="am-container-1">
 		<div class="left hw-logo">
-			<img class=" logo" src="images/icwind.png"></img>
+			<img class="logo" src="images/icwind.png"></img>
 		</div>
+		<button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only"
+				data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span
+				class="am-icon-bars"></span></button>
 		<div class="am-collapse am-topbar-collapse right" id="doc-topbar-collapse">
 			<div class=" am-topbar-left am-form-inline am-topbar-right" role="search">
 				<ul class="am-nav am-nav-pills am-topbar-nav hw-menu">
-					<li><a href="index.html">首页</a></li>
+					<li><a href="index.html">首页</a ></li>
 					<li class="hw-menu-active"><a href="products.html">产品介绍 </a></li>
 					<li><a href="whyus.html">竞争优势</a></li>
 					<li><a href="team.html">团队介绍</a></li>
@@ -48,7 +51,7 @@
 </div>
 
 <div >
-	<ul class=" product-show-ul">
+	<ul class="product-show-ul am-show-md-up">
 		<li >
 			<div class="product-content">
 				<div class="left am-u-sm-12 am-u-md-6 am-u-lg-6 product-content-left">
@@ -56,7 +59,6 @@
 						<h3>物联网数据平台</h3>
 						<span>IOT DATA STREAMING</span>
 					</div>
-
 					<div class="product-show-content">
 						<div class="product-intro">
 							<div><p>芯翼达的物联网数据平台支持多种设备数据传输模式，包括 MQTT， TCP， HTTP， UDP等；
@@ -142,9 +144,125 @@
 		</li>
 		<div class="clear"></div>
 	</ul>
+
+	<ul class="product-show-ul am-show-sm-only">
+		<li >
+			<div class="product-content">
+				<div class="am-u-sm-12 am-u-md-12 am-u-lg-6 product-content-left">
+					<div class="product-show-title">
+						<h3>物联网数据平台</h3>
+						<span>IOT DATA STREAMING</span>
+					</div>
+					<div style="margin-right: 20px" class="am-u-sm-12 am-u-md-6 am-u-lg-6 product-content-right">
+						<img style="margin-top: 15px" class="product-img" src="images/iot.png" />
+					</div>
+					<div class="product-show-content">
+						<div class="product-intro">
+							<div><p>芯翼达的物联网数据平台支持多种设备数据传输模式，包括 MQTT， TCP， HTTP， UDP等；
+								采集的数据在设备网关经过数据的标准化，通过 ESB 由微服务平行处理，
+								从大量数据中采集商业信息，支持数据可视化和 API 数据共享
+							</p></div>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</li>
+		<li  class="gray-li">
+			<div class="product-content">
+				<div class="am-u-sm-12 am-u-md-12 am-u-lg-6 product-content-right">
+					<div class="product-show-title">
+						<h3>物联网安全芯片</h3>
+						<span>KEYIN TECHNOLOGY</span>
+					</div>
+					<div style="margin-right: 20px" class="am-u-sm-12 am-u-md-6 am-u-lg-6 product-content-right">
+						<img style="margin-top: 15px" class="product-img" src="images/puf.png" />
+					</div>
+					<div class="product-show-content">
+						<div class="product-intro">
+							<div><p>物联网安全是云安全技术的扩展，其独特性体现在设备端的安全；我们开发的 KEYIN 安全芯片支持不可复制的
+								密钥，可用于数据加密，防伪
+							</p></div>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</li>
+		<li>
+			<div class="product-content">
+				<div class="am-u-sm-12 am-u-md-12 am-u-lg-6 product-content-left">
+					<div class="product-show-title">
+						<h3>云集成平台</h3>
+						<span>CLOUD INTEGRATION</span>
+					</div>
+					<div style="margin-right: 20px" class="am-u-sm-12 am-u-md-6 am-u-lg-6 product-content-right">
+						<img style="margin-top: 15px" class="product-img" src="images/cip.png" />
+					</div>
+					<div class="product-show-content">
+						<div class="product-intro">
+							<div><p>关键词：多租户，信息资产（人，设备，APP， API），管理，集成，安全</p><br></div>
+							<div><p>特点： 与云服务商提供的服务相比较，这样的系统更加灵活，安全，为企业提供技术的独立性</p><br></div>
+							<div><p>功能模块：API 网关，SAML 单点登录，OAUTH2 认证，MFA 多因子验证，权限管理，审计
+							</p></div>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</li>
+
+		<li class="gray-li">
+			<div class="product-content">
+				<div class="am-u-sm-12 am-u-md-12 am-u-lg-6 product-content-right">
+					<div class="product-show-title">
+						<h3>系统监控平台</h3>
+						<span>SYSTEM MONITORING</span>
+					</div>
+					<div style="margin-right: 20px" class="am-u-sm-12 am-u-md-6 am-u-lg-6 product-content-right">
+						<img style="margin-top: 15px" class="product-img" src="images/cmp.png" />
+					</div>
+					<div class="product-show-content">
+						<div class="product-intro">
+							<div><p>芯翼达的监控产品提供实时状态与时间段趋势的分析，支持计算机系统的核心指标，包括 CPU， MEMORY， DISK；支持网络状态拓扑图；
+								还有针对应用层面的功能，包括服务器，数据库</p></div>
+
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</li>
+		<div class="clear"></div>
+	</ul>
 </div>
 
-<footer class="footer ">
+<footer class="footer am-show-md-up">
+	<div class="am-container-1">
+		<ul>
+			<li class="am-u-lg-6 am-u-md-6 am-u-sm-12 part-5-li2">
+				<div class="part-5-title">联系我们</div>
+				<div class="part-5-words2">
+					<span>地址: 成都市高新区新世纪环球中心6栋S2-301，邮编 610000 </span>
+					<span>电话: 028-67560325</span>
+					<span>邮箱: info@icwind.com</span>
+				</div>
+			</li>
+			<li class="am-u-lg-6 am-u-md-6 am-u-sm-12 ">
+				<div class="part-5-title">相关链接</div>
+				<div class="part-5-words2">
+					<ul class="part-5-words2-ul">
+						<li class="am-u-lg-6 am-u-md-6 am-u-sm-12"><a href="http://www.soterianetworks.com">Soteria Networks</a></li>
+						<div class="clear"></div>
+					</ul>
+				</div>
+			</li>
+			<div class="clear"></div>
+		</ul>
+	</div>
+</footer>
+
+<footer class="smallScreenFooter am-show-sm-only">
 	<div class="am-container-1">
 		<ul>
 			<li class="am-u-lg-6 am-u-md-6 am-u-sm-12 part-5-li2">

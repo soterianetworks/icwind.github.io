@@ -261,6 +261,16 @@ a {
     background-size: 100% 100%;
 }
 
+/* 小屏幕的尾部样式 */
+.smallScreenFooter {
+    width: 100%;
+    height: auto;
+    background-color: #2d2d2d;
+    overflow: hidden;
+    padding: 0 5% 25px 5%;
+    background-size: 100% 100%;
+}
+
 .footer ul {
     padding-top: 40px;
     width: 85%;
@@ -268,6 +278,16 @@ a {
 }
 
 .footer ul li {
+    color: #fff;
+}
+
+.smallScreenFooter ul {
+    padding-top: 40px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.smallScreenFooter ul li {
     color: #fff;
 }
 
@@ -1579,6 +1599,15 @@ i.am-icon-tasks {
     width: 60%;
     margin: 0 auto;
     border: solid 2px #c5c5c5;
+    padding: 20px 5%;
+    color: #969696;
+}
+
+.smallScreen-daiyu-content {
+    padding: 20px 20px 0 20px;
+    width: 90%;
+    margin: 0 auto;
+    border: solid 1px #c5c5c5;
     padding: 20px 5%;
     color: #969696;
 }

@@ -3123,7 +3123,7 @@ fieldset[disabled] .am-checkbox-inline {
   clear: both;
   -webkit-overflow-scrolling: touch;
   background-color: #fff;
-  margin-top: 25px;
+  margin-top: 20px;
 }
 .am-topbar-collapse:before,
 .am-topbar-collapse:after {
