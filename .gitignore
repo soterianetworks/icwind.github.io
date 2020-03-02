@@ -1,0 +1,9 @@
+node_modules/**
+dist/**
+
+*.iws
+*.ids
+*/*.iml
+*.iml
+.idea/*
+.idea
